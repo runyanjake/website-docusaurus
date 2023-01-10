@@ -1,0 +1,10 @@
+version: "3"
+services: 
+  website:
+    image: jr-site:latest
+    container_name: jake_website_whitney
+    restart: always
+    build: .
+    ports: 
+      - "2345:3000"
+
